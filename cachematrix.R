@@ -5,7 +5,7 @@
 ## makeCacheMatrix: initialitze a matrix including cache for inverse
 ## and functions set, get, setinv, getinv to operate on the matrix
 
-makeCacheMatrix <- function(x = numeric()) {
+makeCacheMatrix <- function(x = matrix()) {
 
         ## first, initialize inverse with same number of rows and columns 
         inverse <- matrix(nrow=nrow(x), ncol=ncol(x))
@@ -70,4 +70,5 @@ cacheSolve <- function(x, ...) {
 
         # return the newly calculated inverse
         inv
+
 }
